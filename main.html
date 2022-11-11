@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR&display=swap');
+        
+        body {
+            background-color: #2f2748;
+            background-size:100% 100%;
+        }
+        .project_title {
+            display: inline-block;
+            position: relative;
+            font-family: 'Gugi';
+            color: white; 
+            font-size: 5em; 
+            line-height: 0.4em; 
+            width: 100%;
+            text-align: center;
+        }
+        .map {
+            display: inline-block;
+            position: relative;
+            font-family: 'Noto Sans KR';
+            margin-left: 1700px;
+        }
+        .mapbtn {
+            border: none;
+            background-color: #2f2748;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            width: 90px;
+            cursor: pointer;
+            font-size: 12px;
+            text-align: center;
+        }
+        .mapbtn:hover {
+            background-color: white;
+            color : black            
+        }
+        .dropdown {
+            display: inline-block;
+            position: relative;
+            font-family: 'Noto Sans KR';
+        }
+        .dropbtn {
+            border: none;
+            background-color: #2f2748;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            width: 90px;
+            cursor: pointer;
+            font-size: 12px;
+            text-align: center;
+        }
+        .dropdown_content {
+            display: none;
+            position: absolute;
+            z-index: 1; /*다른 요소들보다 앞에 배치*/
+            background-color: #2f2748;
+            min-width: 90px;
+            text-align: center;        
+        }
+        .dropdown_content a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+            padding: 12px 20px;
+        }
+        .dropbtn:hover {
+            background-color: white;
+            color : black
+        }
+        .dropdown_content a:hover {
+            background-color: white;
+            color : black
+        }
+        .dropdown:hover .dropdown_content {
+            display: block;
+        }
+        .postcard .postcard_image .image1{
+            float: left;
+            padding: 50px;
+            margin: 100px 30px 50px 170px ;
+            border: 8px solid white;
+        }
+        .postcard .postcard_image .image2{
+            float: right;
+            padding: 50px;
+            margin: 100px 170px 50px 30px;
+            border: 8px solid white;
+        }
+        .postcard .postcard_choice .choice1 {
+            float: left;
+            background-color: transparent;
+            font-family: 'Gugi';
+            color: white;
+            font-size: 2em;
+            cursor: pointer;
+            border: 1px solid white;
+            padding: 10px;
+            width: 7%;
+            margin-bottom: 200px;
+            margin-left: 400px;
+        }
+        .postcard .postcard_choice .choice2 {
+            float: right;
+            background-color: transparent;
+            font-family: 'Gugi';
+            color: white;
+            font-size: 2em;
+            cursor: pointer;
+            border: 1px solid white;
+            padding: 10px;
+            width: 7%;
+            margin-bottom: 200px ;
+            margin-right: 400px;
+        }
+        </style>
+</head>
+<body>
+    <div align="right" class="map">
+        <button class="mapbtn"><b>지도</b></button>
+    </div>
+    <div align="right" class="dropdown">     
+        <button class="dropbtn"><b>더보기</b></button>
+            <div class="dropdown_content">
+                <a href="#">문의하기</a>
+                <a href="#">나가기</a>
+            </div>
+    </div>
+    <div class="project_title">
+        <p>당신이 모르는</p>
+        <p>전래동화 이야기</p>
+    </div>
+    <div class="background_postcard">
+        <div class="postcard">
+            <div class="postcard_image">
+                <img class="image1" src="image/map.png" align=left width="500" height="300">
+                <img class="image2" src="image/map.png" align=right width="500" height="300">
+            </div>
+            <div class="postcard_choice">
+                <button class="choice1" type="submit" onclick="#">하나</button>
+                <button class="choice2" type="submit" onclick="#">둘</button>
+            </div>
+        </div>
+    </div>
+</body>
